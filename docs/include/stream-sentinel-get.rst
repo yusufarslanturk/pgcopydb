@@ -1,8 +1,14 @@
 ::
 
    pgcopydb stream sentinel get: Get the sentinel table values
-   usage: pgcopydb stream sentinel get  --source ... 
+   usage: pgcopydb stream sentinel get 
    
-     --source      Postgres URI to the source database
-     --json        Format the output using JSON
+     --json           Format the output using JSON
+     --startpos       Get only the startpos value
+     --endpos         Get only the endpos value
+     --apply          Get only the apply value
+     --write-lsn      Get only the write LSN value
+     --flush-lsn      Get only the flush LSN value
+     --transform-lsn  Get only the tranform LSN value
+     --replay-lsn     Get only the replay LSN value
    
